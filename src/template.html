@@ -8,10 +8,49 @@
 </head>
 <body id="body">
     <header>
-    <p class="test">My main man</p>
     </header>
-    <content id="content"> 
-
+    <content class="content"> 
+    <div class="titleBox container">
+            <div class="title-text">
+                <h1 class="title">Japan Weather</h1>
+            <p class="test">Accurate weather updates precise to your location.</p>
+            </div>
+            <div class="image-container">
+                <img src="#" class="weatherImg">
+            </div>
+        </div>
+    <div class="location-container container">
+            <div>
+            <h3>Current Location :</h3>
+            <p id="current-location" class="weather-text">Tokyo</p>
+            </div>
+            <div>
+                <h3>Weather Conditions:</h3>
+                <p id="current-weather" class="weather-text">Unknown</p>
+            </div>           
+        </div>
+    <div class="change-location container">
+        <form class="new-location-form">
+            <div class="form-grid">
+            <div class="location-input-box">
+                <label name="location" class="location-label">Change Location</label>
+                <input id="location" name="location" placeholder="Enter a city in Japan" type="text" class="location-input" required>
+            </div>
+            <button type="button" id="location-button">Submit</button>
+            </div>
+        </form>
+        <div>
+          <p>Progress bar</p>
+          <div id="loading-bar">
+            <div id="green-bar"><p id="progress-text">Loading complete</p></div>
+            <div id="red-bar" class="hidden"><p id="error-text">Unable to load content</p></div>
+          </div>
+        </div>
+    </div>
+    <div class="description-box container">
+            <h3>Weather conditions information :</h3>
+            <p id="description">Unknown</p>
+    </div>
     </content>
 </body>
 </html>
